@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'samarn';
+    src: url('font/samarn.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto';
+  }
+
+#particles-js{
+    height: 100%;
+    width:100%;
+    background: #26262600;
+    z-index: 1;
+    position: absolute;
+}
+  
+  #fullpage {
+    height: 100vh;
+    text-align: center;
+    
+    color:#fff;
+  }
+  
+  #fullpage section { height: 100vh; }
+  
+  #fullpage section:nth-child(1) { background-color: rgb(228, 197, 22); }
+  
+  #fullpage section:nth-child(2) { background: linear-gradient(to right top, rgb(67, 255, 192), rgb(23, 233, 110));}
+  
+  #fullpage section:nth-child(3) { background: linear-gradient(to right top, rgb(53, 238, 252), rgb(49, 252, 218)); }
+  
+  #fullpage section:nth-child(4) { background: linear-gradient(to right top, rgb(196, 196, 196),rgb(240, 240, 240)); }
+
+.ruchilogo{
+    position: fixed;
+    top: 20px;
+    left:30px;
+    z-index: 100;
+
+}
+
+.ruchilogo img{
+    width: 180px;
+    height: 75px;
+}
+  
+
+.nav{
+    left:30px;
+    top: 40%;
+    width: 150px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0);
+    height: 30vh;
+    position:fixed;
+    z-index: 100;
+    transition: 0.5s all ease-in;
+}
+
+
+
+.nav ul{
+    display: inline-block;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.nav ul li{
+    
+    margin-top: 8px; 
+}
+
+
+.nav ul li a{
+    padding-left: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Comfortaa', cursive;
+    display: inline;
+    color: rgb(95, 95, 95);
+    transition: 200ms all ease-in;
+    cursor: pointer;
+}
+
+.nav ul li a:active,
+.nav ul li a:focus,
+.nav ul li a:hover{
+    font-size:20px;
+    color: rgb(58, 58, 58);
+    font-weight: 600;
+}
+
+#adhyaaylogo{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 100px;
+    height: 85px;
+}
+
+.content-home{
+    width: 100%;
+    height:100%;
+    position: relative;
+    text-align: center;
+    z-index: 99;
+}
+
+.adhyaay{
+    text-align: center;
+    position:absolute;
+    top: 40%;
+    left: 30%;
+    color: black;
+    font-size: 100px;
+    line-height: 96px;
+    letter-spacing: 2px;
+    font-family: 'Comfortaa', cursive;
+    opacity: 0;
+    animation: adhyaay 3s ease-in-out 1;
+    transition: 0.5s all ease-in;
+}
+
+.presents{
+    text-align: center;
+    position:absolute;
+    top: 40%;
+    left: 40%;
+    color: black;
+    font-size: 80px;
+    line-height: 100px;
+    letter-spacing: 1.4px;
+    font-family: 'Charmonman', cursive;
+    opacity: 0;
+    animation: presents 3s ease-in-out 1;
+    animation-delay: 3s;
+    transition: 0.5s all ease-in;
+}
+
+.ruchihaar img {
+    
+    position:absolute;
+    top: 30%;
+    left: 22%;
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 1.4px;
+    font-family: 'Pacifico', cursive;
+    opacity: 1;
+    animation: ruchihaar 6s ease-in-out 1;
+    transition: 0.5s all ease-in;
+    transform: scale(0.8);
+}
+
+.arrow{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+    transform: scale(1.2);
+    animation: arrow 5s ease-in-out infinite;
+}
+
+.arrow .line1{
+    position:absolute;
+    border-radius: 2px;
+    
+    width:5px;
+    background: black;
+    height:20px;
+    transform: rotate(-45deg);
+}
+.arrow .line2{
+    position:absolute;
+    border-radius: 2px;
+    margin-left: 10px;
+    width:5px;
+    background: black;
+    height:20px;
+    transform: rotate(45deg);
+}
+
+.social{
+    position: fixed;
+    bottom:10px;
+    left:20px;
+    width: 200px;
+    height:50px;
+    z-index: 110;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+
+.fa-youtube {
+    background: #bb000000;
+    color: rgb(36, 36, 36);
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 50%;
+}
+  
+.fa-instagram {
+    background: #bb000000;
+    color: rgb(36, 36, 36);
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 50%;
+}
+.fa-facebook {
+    background: #bb000000;
+    color: rgb(36, 36, 36);
+    border: 1px solid rgb(36, 36, 36);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa:hover{
+    transform: scale(1.5);
+}
+
+@keyframes adhyaay{
+    0%{ opacity: 0;}
+    50%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+
+@keyframes presents{
+    0%{ opacity: 0;}
+    50%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+
+@keyframes ruchihaar{
+    0%{ opacity: 0;}
+    
+    99.9%{ opacity: 0;}
+} 
+
+@keyframes arrow{
+    40%{ transform: scale(1.2); }
+    50%{ transform: scale(1.6);}
+    60%{ transform: scale(1.2);}
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.mainh{
+    margin-top: 30px;
+    margin-left: 250px;
+    width:100%;
+    height:20%;
+    font-size:70px;
+    font-family: 'Comfortaa', cursive;
+    text-align: left;
+
+}
+.event-cont{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.event-des{
+    position: relative;
+    margin: 80px;
+    padding-left: 250px;
+    padding-right: 150px;
+    font-size: 24px;
+    font-family: 'Comfortaa', cursive;
+    height: 6vh;
+
+
+}
+.btn{
+    position: absolute;
+    top:10;
+    left:45%;
+    z-index: 120;
+}
+
+.btn button{
+    width: 260px;
+    height:50px;
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0);
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'K2D', sans-serif;
+   
+}
+
+.btn button:hover{
+    transform: scale(1.1);
+}

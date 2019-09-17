@@ -1,0 +1,155 @@
+.team-content{
+    width: 100%;
+    height:100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 100;
+}
+.team-content .heading{
+    margin-top: 30px;
+    margin-left: 250px;
+    width: 100%;
+    height: 150px;
+    text-align: left;
+    font-size: 70px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: black;
+}
+
+.department{
+    position: relative;
+    display: block;
+    margin: auto;
+    padding:30px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size:40px;
+    font-weight: 500;
+    line-height: 50px;
+    color:rgb(48, 48, 48);
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+.department .heading1{
+    width:100%;
+    position: relative;
+    top:0;
+    font-family: 'Comfortaa', cursive;
+}
+.post{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    margin-top:30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    font-size:36px;
+    line-height: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+.team-image {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+    align-self: center;
+    align-content: center;
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: rgb(255, 255, 255) 1.5px solid;
+    border-radius: 1px;
+    z-index: 100;
+    transition: 0.5s all ease;
+
+}
+
+.team-image img{
+    position:relative;
+    display: initial;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -10;
+
+} 
+
+.team-image img:hover{
+    filter: blur(5px);
+}
+
+
+
+.team-image:hover > .team-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.719);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 10;
+    padding: 20px;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.3s all ease;
+    
+}
+
+.team-text .name{
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight:600;
+    color: black;
+}
+
+.mande{
+    margin-top: 60px;
+    display: block;
+    position: relative;
+    left:0px;
+    
+    width: 0px;
+    text-align: center;
+    height: 20px;
+}
+
+.mande a{
+    position: absolute;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight:500;
+    color: black;
+    text-decoration: none;
+
+}
+
+.mande a:nth-child(1){
+    left: 25px;
+    font-weight: 600;
+}
+
+.mande a:nth-child(2){
+    top: 30px;
+    left: 0px;
+    font-size: 14px;
+}
